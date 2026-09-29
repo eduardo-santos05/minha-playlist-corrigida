@@ -23,7 +23,7 @@ function listarMusicas() {
     console.log("A playlist está vazia.");
     return;
   }
-
+  
   for (let i = 0; i < playlist.length; i++) {
     const musica = playlist[i];
     console.log((i+1) + ". " + musica.titulo + " - " + musica.artista + " (" + musica.duracao + " min)");
@@ -31,10 +31,10 @@ function listarMusicas() {
 }
 
 function mostrarDuracaoTotal() {
-  const total = 0;
+  let total = 0;
 
   for (let i = 0; i < playlist.length; i++) {
-    total = playlist[i].duracao;
+    total += Number(playlist[i].duracao);
   }
 
   console.log("Duração total da playlist: " + total + " min");
