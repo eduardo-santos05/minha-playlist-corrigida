@@ -59,9 +59,10 @@ function removerMusica() {
   console.log("Música removida!");
 }
 
+const playlist = [];
 let opcao;
+
 do {
-  const playlist = [];
   exibirMenu();
   opcao = prompt("Escolha uma opção: ");
 
