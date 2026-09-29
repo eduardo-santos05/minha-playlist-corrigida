@@ -67,7 +67,7 @@ do {
 
   if (opcao === "1") {
     adicionarMusica();
-  } elseif (opcao === "2") {
+  } else if (opcao === "2") {
     listarMusicas();
   } else if (opcao === "3") {
     mostrarDuracaoTotal();
