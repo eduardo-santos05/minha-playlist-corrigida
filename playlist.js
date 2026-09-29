@@ -44,9 +44,11 @@ function removerMusica() {
   const titulo = prompt("Título da música a remover: ");
   let indice = -1;
 
-  for (let i = 1; i < playlist.length; i++) {
+  for (let i = 0; i < playlist.length; i++) {
     if (playlist[i].titulo === titulo) {
       indice = i;
+      playlist.splice(indice, 1);
+      console.log("Música removida!");
     }
   }
 
@@ -54,9 +56,6 @@ function removerMusica() {
     console.log("Música não encontrada.");
     return;
   }
-
-  playlist.splice(indice);
-  console.log("Música removida!");
 }
 
 const playlist = [];
