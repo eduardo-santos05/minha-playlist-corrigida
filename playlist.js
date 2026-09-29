@@ -26,7 +26,7 @@ function listarMusicas() {
 
   for (let i = 0; i < playlist.length; i++) {
     const musica = playlist[i];
-    console.log(i + ". " + musica.titulo + " - " + musica.artista + " (" + musica.duracao + " min)");
+    console.log((i+1) + ". " + musica.titulo + " - " + musica.artista + " (" + musica.duracao + " min)");
   }
 }
 
