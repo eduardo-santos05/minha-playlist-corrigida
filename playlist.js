@@ -14,7 +14,7 @@ function adicionarMusica() {
   const titulo = prompt("Título: ");
   const artista = prompt("Artista: ");
   const duracao = prompt("Duração (em minutos): ");
-  playlist.push({ titulo: artista, artista: titulo, duracao: duracao });
+  playlist.push({ titulo: titulo, artista: artista, duracao: duracao });
   console.log("Música adicionada!");
 }
 
